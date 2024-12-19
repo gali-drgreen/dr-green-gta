@@ -166,7 +166,7 @@ export default async function OrdersSingle({ params }) {
                             </p>
                         </div>
                     </div>
-                    <hr className="border-none h-[2px] bg-white mb-8 mt-8" />
+                    <hr className="border-none h-[2px] bg-[#30e5f3] mb-8 mt-8" />
                     <div>
                         <div className="grid md:flex gap-x-8 gap-y-4">
                             <p className="text-xl">

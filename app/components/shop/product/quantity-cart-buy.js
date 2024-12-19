@@ -148,7 +148,7 @@ export default function QuantityCartBuy(props) {
                         </p>
                     )}
                     {cartErrorMessage && (
-                        <p className="text-red-500 text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
+                        <p className="text-[#30e5f3] text-base absolute top-full right-1/2 translate-x-1/2 mt-2">
                             {cartErrorMessage}
                         </p>
                     )}

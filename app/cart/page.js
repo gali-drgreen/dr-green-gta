@@ -67,7 +67,7 @@ export default async function CartPage() {
     return (
         <main className="pt-20 relative">
             <div className="container mx-auto px-4">
-                <h1 className="h2 mb-10 relative z-10 secondary-font">
+                <h1 className="text-4xl md:text-6xl font-semibold mb-8 secondary-font">
                     Your Cart
                 </h1>
                 <CartClient

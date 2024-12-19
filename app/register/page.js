@@ -17,7 +17,9 @@ export default async function Register() {
             <section id="register" className="pt-20">
                 <div className="container mx-auto px-4">
                     <div className="mb-10">
-                        <h1 className="h2 relative z-10">Register</h1>
+                        <h1 className="text-4xl md:text-6xl font-semibold secondary-font">
+                            Register
+                        </h1>
                         <p className="text-xl font-medium">
                             Fill out information about yourself.
                         </p>

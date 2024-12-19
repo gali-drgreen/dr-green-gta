@@ -7,7 +7,9 @@ export default async function PageDashboard() {
     return (
         <div>
             <div className="mb-10 pb-10 border-b-2 border-white block md:hidden">
-                <h1 className="h2 relative z-10">Dashboard</h1>
+                <h1 className="text-4xl md:text-6xl font-semibold secondary-font">
+                    Dashboard
+                </h1>
                 <p className="text-xl font-medium">
                     Welcome back
                     {session?.user?.dappUser?.firstName

@@ -37,7 +37,7 @@ export default function DeleteAccountButton(props) {
     return (
         <div className="relative">
             <div
-                className={`absolute border border-red-500 border-2 bottom-full right-1/2 translate-x-1/2 bg-black p-6 rounded-[20px] w-[300px] mb-6 duration-500 ease-in-out ${
+                className={`absolute border border-[#30E5F3] border-2 bottom-full right-1/2 translate-x-1/2 bg-black p-6 rounded-[20px] w-[350px] mb-6 duration-500 ease-in-out ${
                     popup ? "opacity-full" : "opacity-0"
                 }`}
             >
@@ -49,7 +49,7 @@ export default function DeleteAccountButton(props) {
                                 : "There was a problem, please contact us."}
                         </p>
                         <button
-                            className="uppercase py-4 px-6 rounded-full bg-transparent border border-red-500 border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#ef4444] duration-200 ease-in-out"
+                            className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                             title="Close"
                             onClick={popupCloseHandler}
                         >
@@ -67,13 +67,13 @@ export default function DeleteAccountButton(props) {
                         <div className="flex justify-between items-center">
                             <button
                                 title="Stay"
-                                className="uppercase py-4 px-6 rounded-full bg-transparent border border-[#30e5f3] border-2 shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out"
+                                className="secondary-font uppercase py-3 px-6 bg-[#30E5F3] rounded-[7px] border border-[#30E5F3] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#30E5F3] duration-200 ease-in-out"
                                 onClick={popupCloseHandler}
                             >
                                 Stay
                             </button>
                             <button
-                                className="uppercase py-4 px-6 rounded-full bg-transparent border border-red-500 border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#ef4444] duration-200 ease-in-out"
+                                className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                                 title="Delete"
                                 onClick={requestDeleteHandler}
                             >
@@ -82,10 +82,10 @@ export default function DeleteAccountButton(props) {
                         </div>
                     </div>
                 )}
-                <span className="absolute bottom-[-22px] right-1/2 translate-x-1/2 h-0 w-0 border-[20px] border-transparent border-t-red-500 border-b-0 block" />
+                <span className="absolute bottom-[-22px] right-1/2 translate-x-1/2 h-0 w-0 border-[20px] border-transparent border-t-[#30E5F3] border-b-0 block" />
             </div>
             <button
-                className="py-4 px-6 rounded-full bg-transparent border border-red-500 border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#ef4444] duration-200 ease-in-out"
+                className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                 title="DELETE ACCOUNT"
                 onClick={popupOpenHandler}
             >

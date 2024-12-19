@@ -77,7 +77,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-red-500">*</span>
+                        First Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -93,14 +93,14 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.firstName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.firstName}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-red-500">*</span>
+                        Last Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -116,7 +116,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.lastName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.lastName}
                         </p>
                     )}
@@ -125,7 +125,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="dob">
-                        Date of Birth <span className="text-red-500">*</span>
+                        Date of Birth <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -141,14 +141,14 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.dob && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.dob}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="gender">
-                        Gender <span className="text-red-500">*</span>
+                        Gender <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div className="flex flex-wrap gap-4">
                         <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -206,7 +206,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="email">
-                        Email Address <span className="text-red-500">*</span>
+                        Email Address <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -222,7 +222,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.email && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.email}
                         </p>
                     )}
@@ -230,7 +230,7 @@ export default function ReferForm(props) {
                 <div>
                     <label htmlFor="confirm_email">
                         Confirm Email Address{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -243,7 +243,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.confirm_email && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.confirm_email}
                         </p>
                     )}
@@ -255,7 +255,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-red-500">*</span>
+                        Address Line 1 <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -271,7 +271,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.address1 && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.address1}
                         </p>
                     )}
@@ -309,7 +309,7 @@ export default function ReferForm(props) {
                 </div>
                 <div>
                     <label htmlFor="city">
-                        City <span className="text-red-500">*</span>
+                        City <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -325,7 +325,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.city && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.city}
                         </p>
                     )}
@@ -334,7 +334,7 @@ export default function ReferForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="state">
-                        State <span className="text-red-500">*</span>
+                        State <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -350,14 +350,14 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.state && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.state}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-red-500">*</span>
+                        Postal Code <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -373,7 +373,7 @@ export default function ReferForm(props) {
                         />
                     </div>
                     {state?.errors?.postalCode && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.postalCode}
                         </p>
                     )}
@@ -381,7 +381,7 @@ export default function ReferForm(props) {
             </div>
             <div>
                 <label htmlFor="country">
-                    Country <span className="text-red-500">*</span>
+                    Country <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <input
@@ -395,7 +395,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.country && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.country}
                     </p>
                 )}
@@ -1143,7 +1143,7 @@ export default function ReferForm(props) {
                     </label>
                 </div>
                 {state?.errors?.medical_condition && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medical_condition}
                     </p>
                 )}
@@ -1152,7 +1152,7 @@ export default function ReferForm(props) {
                 <label htmlFor="other_medical_condition">
                     Please provide further details of your medical condition.{" "}
                     {otherMedicalCondition && (
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     )}
                 </label>
                 <div>
@@ -1170,7 +1170,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.other_medical_condition && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.other_medical_condition}
                     </p>
                 )}
@@ -2156,7 +2156,7 @@ export default function ReferForm(props) {
                     </label>
                 </div>
                 {state?.errors?.medicines_treatments && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicines_treatments}
                     </p>
                 )}
@@ -2166,7 +2166,7 @@ export default function ReferForm(props) {
                     Please provide further details of your prescribed medicines
                     / treatments.{" "}
                     {otherMedicinesTreatments && (
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     )}
                 </label>
                 <div>
@@ -2184,7 +2184,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.other_medicines_treatments && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.other_medicines_treatments}
                     </p>
                 )}
@@ -2208,7 +2208,7 @@ export default function ReferForm(props) {
                     palpitations, heart attack (MI), stroke, angina, chest pain,
                     shortness of breath, arrhythmias (funny heart beats),
                     pacemaker, or taking any heart medications?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2249,7 +2249,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Are you currently being treated for cancer or undergoing any
-                    cancer treatments? <span className="text-red-500">*</span>
+                    cancer treatments? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2290,7 +2290,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Are you currently taking Immunosuppressants or Immunotherapy
-                    medication? <span className="text-red-500">*</span>
+                    medication? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2332,7 +2332,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Do you have any history of Liver Disease including
                     hepatitis, elevated liver enzyme function blood tests, fatty
-                    liver cirrhosis? <span className="text-red-500">*</span>
+                    liver cirrhosis? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2374,7 +2374,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Psychiatric history - Have you ever been referred to a
                     psychiatrist health service?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2415,7 +2415,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have You Ever Been Diagnosed With?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2540,7 +2540,7 @@ export default function ReferForm(props) {
                     </label>
                 </div>
                 {state?.errors?.medicalHistory5 && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory5}
                     </p>
                 )}
@@ -2548,7 +2548,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Do you currently or have you ever felt suicidal or had
-                    suicidal thoughts? <span className="text-red-500">*</span>
+                    suicidal thoughts? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2590,7 +2590,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Family History - Does anyone in your family suffer from any
                     of the following conditions and if so, what is their
-                    relation to you? <span className="text-red-500">*</span>
+                    relation to you? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2704,7 +2704,7 @@ export default function ReferForm(props) {
                     </label>
                 </div>
                 {state?.errors?.medicalHistory7 && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory7}
                     </p>
                 )}
@@ -2723,7 +2723,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.medicalHistory7Relation && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory7Relation}
                     </p>
                 )}
@@ -2735,7 +2735,7 @@ export default function ReferForm(props) {
                     marijuana, ecstasy, GHB, legal highs such as spice,
                     prescription drug abuse (such as opioids, prescription
                     painkillers or benzodiazepines)?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2776,7 +2776,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Do you have a history of alcohol abuse or dependency?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2817,7 +2817,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have you ever been under the care of drug and alcohol
-                    services? <span className="text-red-500">*</span>
+                    services? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2858,7 +2858,7 @@ export default function ReferForm(props) {
             <div>
                 <label htmlFor="medicalHistory11">
                     How many units of Alcohol do you drink per week?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <input
@@ -2874,7 +2874,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.medicalHistory11 && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory11}
                     </p>
                 )}
@@ -2883,7 +2883,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Do you use cannabis to reduce or eliminate the use of any
                     medications that have been prescribed for your medical
-                    condition? <span className="text-red-500">*</span>
+                    condition? <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -2925,7 +2925,7 @@ export default function ReferForm(props) {
                 <p className="mb-2">
                     Cannabis History - If you do use cannabis currently, how
                     often do you use cannabis?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3002,7 +3002,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     If you have used cannabis, how have you used cannabis?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3092,7 +3092,7 @@ export default function ReferForm(props) {
                     </label>
                 </div>
                 {state?.errors?.medicalHistory14 && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory14}
                     </p>
                 )}
@@ -3100,7 +3100,7 @@ export default function ReferForm(props) {
             <div>
                 <label htmlFor="medicalHistory15">
                     How much cannabis do you currently use per day?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <input
@@ -3118,7 +3118,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.medicalHistory15 && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.medicalHistory15}
                     </p>
                 )}
@@ -3126,7 +3126,7 @@ export default function ReferForm(props) {
             <div>
                 <p className="mb-2">
                     Have you had any serious reaction to cannabis?{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <label className="font-normal cursor-pointer text-[13px] sm:text-base">
@@ -3184,7 +3184,7 @@ export default function ReferForm(props) {
                     />
                 </div>
                 {state?.errors?.prescriptionsSupplements && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.prescriptionsSupplements}
                     </p>
                 )}
@@ -3207,10 +3207,10 @@ export default function ReferForm(props) {
                         required
                     />
                     I agree to the above statement.{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </label>
                 {state?.errors?.consent_agree && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.consent_agree}
                     </p>
                 )}
@@ -3218,14 +3218,14 @@ export default function ReferForm(props) {
             <div className="flex justify-center items-center gap-4 flex-wrap">
                 <button
                     type="submit"
-                    title="Save"
-                    className={`uppercase py-4 px-6 rounded-full border border-[#30e5f3] border-2 bg-[#0ABA90] shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
+                    title="Submit"
+                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
                         isPending ? "pointer-events-none" : ""
                     }`}
                 >
-                    Save
+                    Submit
                     <svg
-                        className={`animate-spin h-4 w-4 text-white ${
+                        className={`animate-spin h-4 w-4 text-black ${
                             isPending ? "inline" : "hidden"
                         }`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -3249,12 +3249,12 @@ export default function ReferForm(props) {
                 </button>
             </div>
             {state?.errors?.system && (
-                <p className="text-red-500 text-center">
+                <p className="text-[#30e5f3] text-center">
                     {state?.errors?.system}
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#0aba90] text-center">{state?.message}</p>
+                <p className="text-[#fc69f8] text-center">{state?.message}</p>
             )}
         </form>
     );

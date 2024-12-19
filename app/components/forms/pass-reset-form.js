@@ -46,7 +46,7 @@ export default function PasswordResetForm(props) {
                 <div>
                     <label htmlFor="password">
                         Enter New Password{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -60,7 +60,7 @@ export default function PasswordResetForm(props) {
                         />
                     </div>
                     {state?.errors?.password && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.password}
                         </p>
                     )}
@@ -68,7 +68,7 @@ export default function PasswordResetForm(props) {
                 <div>
                     <label htmlFor="password_confirm">
                         Confirm New Password{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -82,7 +82,7 @@ export default function PasswordResetForm(props) {
                         />
                     </div>
                     {state?.errors?.password_confirm && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.password_confirm}
                         </p>
                     )}
@@ -92,13 +92,13 @@ export default function PasswordResetForm(props) {
                 <button
                     type="submit"
                     title="CONFIRM PASSWORD"
-                    className={`py-4 px-6 rounded-full bg-[#0ABA90] shadow border border-[#30e5f3] border-2 hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
+                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
                         isPending ? "pointer-events-none" : ""
                     }`}
                 >
                     CONFIRM PASSWORD
                     <svg
-                        className={`animate-spin h-4 w-4 text-white ${
+                        className={`animate-spin h-4 w-4 text-black ${
                             isPending ? "inline" : "hidden"
                         }`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -122,12 +122,12 @@ export default function PasswordResetForm(props) {
                 </button>
             </div>
             {state?.errors?.system && (
-                <p className="text-red-500 text-center">
+                <p className="text-[#30e5f3] text-center">
                     {state?.errors?.system}
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#0ABA90] text-center">{state?.message}</p>
+                <p className="text-[#fc69f8] text-center">{state?.message}</p>
             )}
         </form>
     ) : (
@@ -140,7 +140,7 @@ export default function PasswordResetForm(props) {
             <div>
                 <label htmlFor="email">
                     Confirm Email Address{" "}
-                    <span className="text-red-500">*</span>
+                    <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <input
@@ -154,7 +154,7 @@ export default function PasswordResetForm(props) {
                     />
                 </div>
                 {state?.errors?.email && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.email}
                     </p>
                 )}
@@ -163,11 +163,11 @@ export default function PasswordResetForm(props) {
                 <button
                     type="submit"
                     title="CONFIRM EMAIL"
-                    className="mr-auto py-4 px-6 border border-[#30e5f3] border-2 rounded-full bg-[#0ABA90] shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center"
+                    className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center"
                 >
                     CONFIRM EMAIL
                     <svg
-                        className={`animate-spin h-4 w-4 text-white ${
+                        className={`animate-spin h-4 w-4 text-black ${
                             isPending ? "inline" : "hidden"
                         }`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -191,12 +191,12 @@ export default function PasswordResetForm(props) {
                 </button>
             </div>
             {state?.errors?.system && (
-                <p className="text-red-500 text-center">
+                <p className="text-[#30e5f3] text-center">
                     {state?.errors?.system}
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#0ABA90] text-center">{state?.message}</p>
+                <p className="text-[#fc69f8] text-center">{state?.message}</p>
             )}
         </form>
     );

@@ -159,7 +159,7 @@ export default function EditAccountForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-red-500">*</span>
+                        First Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -175,14 +175,14 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.firstName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.firstName}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-red-500">*</span>
+                        Last Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -198,7 +198,7 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.lastName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.lastName}
                         </p>
                     )}
@@ -207,7 +207,7 @@ export default function EditAccountForm(props) {
             <div className="sm:grid grid-cols-2 gap-4">
                 <div className="mb-4 sm:mb-0">
                     <label htmlFor="email">
-                        Email Address <span className="text-red-500">*</span>
+                        Email Address <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -223,14 +223,14 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.email && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.email}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="contactNumber">
-                        Contact Number <span className="text-red-500">*</span>
+                        Contact Number <span className="text-[#fc69f8]">*</span>
                     </label>
                     <PhoneInput
                         maxLength={20}
@@ -251,7 +251,7 @@ export default function EditAccountForm(props) {
                         value={phoneCodeValue}
                     />
                     {state?.errors?.contactNumber && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.contactNumber}
                         </p>
                     )}
@@ -263,7 +263,7 @@ export default function EditAccountForm(props) {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-red-500">*</span>
+                        Address Line 1 <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -279,7 +279,7 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.address1 && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.address1}
                         </p>
                     )}
@@ -318,7 +318,7 @@ export default function EditAccountForm(props) {
                 <div>
                     <label htmlFor="city">
                         {countryCode == "GB" ? "Town" : "City"}{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -334,7 +334,7 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.city && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.city}
                         </p>
                     )}
@@ -344,7 +344,7 @@ export default function EditAccountForm(props) {
                 <div>
                     <label htmlFor="state">
                         {countryCode == "GB" ? "County" : "State"}{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -360,14 +360,14 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.state && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.state}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-red-500">*</span>
+                        Postal Code <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -383,7 +383,7 @@ export default function EditAccountForm(props) {
                         />
                     </div>
                     {state?.errors?.postalCode && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.postalCode}
                         </p>
                     )}
@@ -391,7 +391,7 @@ export default function EditAccountForm(props) {
             </div>
             <div>
                 <label htmlFor="countryCode">
-                    Country <span className="text-red-500">*</span>
+                    Country <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <select
@@ -419,7 +419,7 @@ export default function EditAccountForm(props) {
                     />
                 </div>
                 {state?.errors?.countryCode && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.countryCode}
                     </p>
                 )}
@@ -651,7 +651,7 @@ export default function EditAccountForm(props) {
             </div>
             <div className="text-center">
                 {state?.errors?.system && !isPending && (
-                    <p className="text-red-500 text-center">
+                    <p className="text-[#30e5f3] text-center">
                         {state?.errors?.system}
                     </p>
                 )}

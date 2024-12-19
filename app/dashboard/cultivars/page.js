@@ -50,7 +50,7 @@ export default async function Cultivars() {
                     {country != "GB" || eligible ? (
                         <ShopStrains />
                     ) : (
-                        <p className="text-orange-500">
+                        <p className="text-white">
                             Once approved available strains will show here.
                         </p>
                     )}

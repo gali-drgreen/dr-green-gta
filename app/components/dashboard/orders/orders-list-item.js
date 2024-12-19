@@ -72,7 +72,7 @@ export default function OrdersListItem(props) {
                     </Link>
                 </div>
             </div>
-            <hr className="border-none h-[2px] bg-white mb-8 mt-8" />
+            <hr className="border-none h-[2px] bg-[#30e5f3] mb-8 mt-8" />
         </div>
     );
 }

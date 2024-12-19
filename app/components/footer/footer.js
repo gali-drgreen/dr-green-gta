@@ -24,7 +24,7 @@ export default async function Footer() {
                         height={85}
                     />
                     <div>
-                        <p className="uppercase text-[19px] font-semibold tracking-wider mb-4">
+                        <p className="uppercase text-3xl font-semibold tracking-wider mb-4 secondary-font">
                             SOCIALS
                         </p>
                         <div className="flex items-center gap-x-8 xl:gap-x-8 gap-y-4 flex-wrap">
@@ -151,7 +151,7 @@ export default async function Footer() {
                 <div className="grid lg:grid-cols-2 gap-x-8 gap-y-20 mt-16 sm:mt-20">
                     <div className="flex flex-col sm:flex-row items-start gap-16">
                         <div className="grid gap-4">
-                            <p className="uppercase text-[19px] font-semibold tracking-wider">
+                            <p className="uppercase text-3xl font-semibold tracking-wider secondary-font">
                                 Pages
                             </p>
                             <div className="flex flex-wrap gap-x-8 gap-y-4">
@@ -216,7 +216,7 @@ export default async function Footer() {
                         </div>
                     </div>
                     <div>
-                        <p className="uppercase text-[19px] font-semibold tracking-wider mb-4">
+                        <p className="uppercase text-3xl font-semibold tracking-wider mb-4 secondary-font">
                             Join the community
                         </p>
                         <p className="text-base font-normal mb-2">

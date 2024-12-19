@@ -283,7 +283,7 @@ export default async function Home() {
                         </h2>
                         <Link href="/dashboard/eligibility">
                             <button
-                                className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                                className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                                 title="Check Eligibility"
                             >
                                 Check Eligibility
@@ -516,7 +516,7 @@ export default async function Home() {
                             </p>
                             <Link href="mailto:support@drgreennft.com">
                                 <button
-                                    className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
+                                    className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                                     title="Reach Out"
                                 >
                                     Reach Out

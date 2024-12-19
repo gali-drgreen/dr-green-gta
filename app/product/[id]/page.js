@@ -122,7 +122,7 @@ export default async function ProductSingle({ params }) {
                                 }
                             />
                         ) : (
-                            <p className="text-orange-500 mb-16">
+                            <p className="text-white mb-16">
                                 Account not approved yet.
                             </p>
                         )} */}

@@ -59,7 +59,7 @@ export default function LoginForm(props) {
                         />
                     </div>
                     {state?.errors?.username && (
-                        <p className="text-red-500">
+                        <p className="text-[#30e5f3]">
                             {state?.errors?.username}
                         </p>
                     )}
@@ -77,7 +77,7 @@ export default function LoginForm(props) {
                         />
                     </div>
                     {state?.errors?.password && (
-                        <p className="text-red-500">
+                        <p className="text-[#30e5f3]">
                             {state?.errors?.password}
                         </p>
                     )}
@@ -87,13 +87,13 @@ export default function LoginForm(props) {
                 <button
                     type="submit"
                     title="LOGIN"
-                    className={`py-4 px-6 rounded-full border border-[#30e5f3] border-2 bg-[#0ABA90] shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
+                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
                         isPending ? "pointer-events-none" : ""
                     }`}
                 >
                     LOGIN
                     <svg
-                        className={`animate-spin h-4 w-4 text-white ${
+                        className={`animate-spin h-4 w-4 text-black ${
                             isPending ? "inline" : "hidden"
                         }`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -119,14 +119,14 @@ export default function LoginForm(props) {
                 <Link href="/register">
                     <button
                         title="REGISTER"
-                        className="py-4 px-6 rounded-full bg-transparent border border-[#30e5f3] border-2 shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out"
+                        className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                     >
                         REGISTER
                     </button>
                 </Link>
             </div>
-            {invalid && <p className="text-red-500 text-center">{invalid}</p>}
-            {success && <p className="text-[#0ABA90] text-center">{success}</p>}
+            {invalid && <p className="text-[#30e5f3] text-center">{invalid}</p>}
+            {success && <p className="text-[#fc69f8] text-center">{success}</p>}
         </form>
     );
 }

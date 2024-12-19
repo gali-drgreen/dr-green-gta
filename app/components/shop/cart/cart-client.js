@@ -211,10 +211,10 @@ export default function CartClient(props) {
                         </div>
                     )}
                     {checkoutError && (
-                        <p className="text-red-500">{checkoutError}</p>
+                        <p className="text-[#30E5F3]">{checkoutError}</p>
                     )}
                     {checkoutSuccess && (
-                        <p className="text-[#0ABA90]">{checkoutSuccess}</p>
+                        <p className="text-[#FC69F8]">{checkoutSuccess}</p>
                     )}
                 </div>
             </div>

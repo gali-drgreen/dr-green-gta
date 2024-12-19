@@ -10,9 +10,9 @@ export default async function Account() {
     const user = (await getServerSession(options))?.user;
 
     const adminApprovalClass = {
-        PENDING: "text-orange-500",
-        VERIFIED: "text-[#0aba90]",
-        REJECTED: "text-orange-500",
+        PENDING: "text-white",
+        VERIFIED: "text-[#fc69f8]",
+        REJECTED: "text-white",
     };
 
     return (
@@ -69,13 +69,11 @@ export default async function Account() {
                                 Active:{" "}
                                 <strong>
                                     {user?.dappUser?.isActive ? (
-                                        <span className="text-[#0aba90]">
+                                        <span className="text-[#fc69f8]">
                                             YES
                                         </span>
                                     ) : (
-                                        <span className="text-orange-500">
-                                            NO
-                                        </span>
+                                        <span className="text-white">NO</span>
                                     )}
                                 </strong>
                             </li>
@@ -83,11 +81,11 @@ export default async function Account() {
                                 KYC Verified:{" "}
                                 <strong>
                                     {user?.dappUser?.isKYCVerified ? (
-                                        <span className="text-[#0aba90]">
+                                        <span className="text-[#fc69f8]">
                                             YES
                                         </span>
                                     ) : (
-                                        <span className="text-orange-500">
+                                        <span className="text-white">
                                             PENDING
                                         </span>
                                     )}
@@ -112,11 +110,11 @@ export default async function Account() {
                             </li>
                         </ul>
                     </div>
-                    <hr className="border-none h-[2px] bg-white mb-8" />
+                    <hr className="border-none h-[2px] bg-[#30e5f3] mb-8" />
                     <div className="flex justify-between items-center flex-wrap gap-4">
                         <Link href="/reset-password">
                             <button
-                                className="py-4 px-6 rounded-full bg-transparent border border-red-500 border-2 text-[15px] shadow hover:shadow-[0_0_15px_0px_#ef4444] duration-200 ease-in-out"
+                                className="secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                                 title="RESET PASSWORD"
                             >
                                 RESET PASSWORD

@@ -91,7 +91,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName">
-                        First Name <span className="text-red-500">*</span>
+                        First Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -105,14 +105,14 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.firstName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.firstName}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="lastName">
-                        Last Name <span className="text-red-500">*</span>
+                        Last Name <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -126,7 +126,7 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.lastName && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.lastName}
                         </p>
                     )}
@@ -135,7 +135,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="email">
-                        Email Address <span className="text-red-500">*</span>
+                        Email Address <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -149,14 +149,14 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.email && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.email}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="contactNumber">
-                        Contact Number <span className="text-red-500">*</span>
+                        Contact Number <span className="text-[#fc69f8]">*</span>
                     </label>
                     <PhoneInput
                         maxLength={20}
@@ -178,7 +178,7 @@ export default function RegisterForm() {
                         value={phoneCodeValue}
                     />
                     {state?.errors?.contactNumber && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.contactNumber}
                         </p>
                     )}
@@ -187,7 +187,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="username">
-                        Username <span className="text-red-500">*</span>
+                        Username <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -202,14 +202,14 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.username && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.username}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="password">
-                        Password <span className="text-red-500">*</span>
+                        Password <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -223,7 +223,7 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.password && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.password}
                         </p>
                     )}
@@ -235,7 +235,7 @@ export default function RegisterForm() {
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="address1">
-                        Address Line 1 <span className="text-red-500">*</span>
+                        Address Line 1 <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -249,7 +249,7 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.address1 && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.address1}
                         </p>
                     )}
@@ -284,7 +284,7 @@ export default function RegisterForm() {
                 <div>
                     <label htmlFor="city">
                         <span ref={labelCity}>City</span>{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -298,7 +298,7 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.city && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.city}
                         </p>
                     )}
@@ -308,7 +308,7 @@ export default function RegisterForm() {
                 <div>
                     <label htmlFor="state">
                         <span ref={labelState}>State</span>{" "}
-                        <span className="text-red-500">*</span>
+                        <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -322,14 +322,14 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.state && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {state?.errors?.state}
                         </p>
                     )}
                 </div>
                 <div>
                     <label htmlFor="postalCode">
-                        Postal Code <span className="text-red-500">*</span>
+                        Postal Code <span className="text-[#fc69f8]">*</span>
                     </label>
                     <div>
                         <input
@@ -343,7 +343,7 @@ export default function RegisterForm() {
                         />
                     </div>
                     {state?.errors?.postalCode && (
-                        <p className="text-red-500 text-sm leading-tight mt-2">
+                        <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                             {postalCode?.errors?.postalCode}
                         </p>
                     )}
@@ -351,7 +351,7 @@ export default function RegisterForm() {
             </div>
             <div>
                 <label htmlFor="countryCode">
-                    Country <span className="text-red-500">*</span>
+                    Country <span className="text-[#fc69f8]">*</span>
                 </label>
                 <div>
                     <select
@@ -379,7 +379,7 @@ export default function RegisterForm() {
                     />
                 </div>
                 {state?.errors?.countryCode && (
-                    <p className="text-red-500 text-sm leading-tight mt-2">
+                    <p className="text-[#30e5f3] text-sm leading-tight mt-2">
                         {state?.errors?.countryCode}
                     </p>
                 )}
@@ -554,13 +554,13 @@ export default function RegisterForm() {
                 <button
                     type="submit"
                     title="REGISTER"
-                    className={`py-4 px-6 rounded-full border border-[#30e5f3] border-2 bg-[#0ABA90] shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
+                    className={`secondary-font uppercase py-3 px-6 bg-[#fc69f8] rounded-[7px] border border-[#fc69f8] border-2 text-black text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out cursor-pointer flex gap-2 justify-center items-center ${
                         isPending ? "pointer-events-none" : ""
                     }`}
                 >
                     REGISTER
                     <svg
-                        className={`animate-spin h-4 w-4 text-white ${
+                        className={`animate-spin h-4 w-4 text-black ${
                             isPending ? "inline" : "hidden"
                         }`}
                         xmlns="http://www.w3.org/2000/svg"
@@ -586,19 +586,19 @@ export default function RegisterForm() {
                 <Link href="/login">
                     <button
                         title="LOGIN"
-                        className="py-4 px-6 rounded-full bg-transparent border border-[#30e5f3] border-2 shadow hover:shadow-[0_0_15px_0px_#0ABA90] duration-200 ease-in-out"
+                        className="secondary-font uppercase py-3 px-6 bg-transparent rounded-[7px] border border-[#fc69f8] border-2 text-[#fc69f8] text-3xl shadow hover:shadow-[0_0_15px_0px_#fc69f8] duration-200 ease-in-out"
                     >
                         LOGIN
                     </button>
                 </Link>
             </div>
             {state?.errors?.system && (
-                <p className="text-red-500 text-center">
+                <p className="text-[#30e5f3] text-center">
                     {state?.errors?.system}
                 </p>
             )}
             {state?.success && (
-                <p className="text-[#0aba90] text-center">{state?.message}</p>
+                <p className="text-[#fc69f8] text-center">{state?.message}</p>
             )}
         </form>
     );
